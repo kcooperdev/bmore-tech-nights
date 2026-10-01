@@ -21,7 +21,7 @@ export const guideBeats: GuideBeat[] = [
     id: "events",
     screen: "nights",
     title: "The night",
-    body: "Tech After Dark lives here. RSVP when you’re going so the room knows you’ll be there.",
+    body: "RSVP when you’re going so the room knows you’ll be there.",
     next: "The board",
   },
   {

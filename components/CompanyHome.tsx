@@ -5,7 +5,6 @@ import { brand, brandPillars } from "@/lib/brand";
 import {
   company,
   contact,
-  techAfterDark,
   work,
   workPackages,
   workSteps,
@@ -100,15 +99,6 @@ export function CompanyHome() {
             </li>
           ))}
         </ul>
-      </section>
-
-      <section className="omega-night" aria-labelledby="omega-night">
-        <p className="omega-kicker omega-kicker--light">{techAfterDark.kicker}</p>
-        <h2 id="omega-night">{techAfterDark.name}</h2>
-        <p>{techAfterDark.what}</p>
-        <Link className="omega-btn omega-btn--mark" href={techAfterDark.href}>
-          See the night
-        </Link>
       </section>
 
       <footer className="omega-foot">

@@ -4,6 +4,7 @@ import Script from "next/script";
 import Link from "next/link";
 import { forwardRef, useEffect, useRef } from "react";
 import { HouseNav } from "@/components/HouseNav";
+import { brand } from "@/lib/brand";
 
 const EVENT_ID = "evt-c0PRMJkFHQr5G9a";
 const EVENT_URL = `https://luma.com/event/${EVENT_ID}`;
@@ -162,7 +163,7 @@ function Ways() {
   return (
     <p className="path-ways">
       <Link href="/offer">Back to the film</Link>
-      <Link href="/">TechFolx</Link>
+      <Link href="/">{brand.name}</Link>
     </p>
   );
 }

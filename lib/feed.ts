@@ -72,7 +72,7 @@ export function seedDemoFeed() {
     ]),
     makePost(byId.priya, "looking", "founders", "Looking to meet founders in healthcare / civic. Angel checks, not a spray.", base + 20),
     makePost(byId.riley, "looking", "ai", "Looking to meet people who love AI + civic hack nights.", base + 10),
-    makePost(byId.khalif, "resource", "collab", "Tech After Dark — rooms and a crew, not a pitch cage. Register on Luma.", base + 5),
+    makePost(byId.khalif, "resource", "collab", "Bmore Tech Nights — rooms and a crew, not a pitch cage. Register on Luma.", base + 5),
   ].filter((item): item is FeedPost => Boolean(item));
   writeFeed(posts);
   return posts;

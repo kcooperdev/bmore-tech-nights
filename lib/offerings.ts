@@ -10,21 +10,6 @@ export const company = {
   value: "Free to attend. Get on the list so we know the size of the room.",
 } as const;
 
-export const techAfterDark = {
-  name: "Tech After Dark",
-  href: "/tech-after-dark",
-  kicker: "The experience",
-  line: "A tech-infused night.",
-  what: "TechFolx is a house for people in tech — learn, have fun, build, grow. Happy hour energy. The room is the point.",
-  who: "People in tech who want community, not a pitch.",
-  value: "Meet the same house over time. Free to attend. Get on the list.",
-  live: "https://techafterdark.live",
-  when: "The night",
-  where: "",
-  rsvp: brand.luma,
-  calendar: brand.luma,
-} as const;
-
 export const work = {
   name: "Pricing",
   href: "/pricing",
@@ -109,7 +94,7 @@ export const about = {
   href: "/about",
   kicker: "The house",
   line: "Tech, social, community. One house.",
-  what: "TechFolx is about building together. We learn, have fun, and grow in the same room. Get on the list so we know the size of the house.",
+  what: "Bmore Tech Nights is about building together. We learn, have fun, and grow in the same room. Get on the list so we know the size of the house.",
 } as const;
 
 export const contact = {
@@ -152,13 +137,6 @@ export const volunteer = {
   kicker: "The crew",
   line: "Check-in. Set up. Break down.",
 } as const;
-
-export const techWeek = {
-  name: "Tech Week",
-  href: "https://www.bmoretechweek.com/",
-} as const;
-
-export const navOfferings = [techAfterDark] as const;
 
 export const siteLinks = [
   { name: about.name, href: about.href },

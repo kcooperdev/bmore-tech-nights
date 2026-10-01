@@ -24,22 +24,6 @@ export function FolxIcons() {
 
   return (
     <div className="icon-stage">
-      <p className="icon-cue">
-        <span>tap</span>
-        <svg className="crayon-arrow" viewBox="0 0 88 70" aria-hidden="true">
-          <g
-            fill="none"
-            stroke="#f4be3c"
-            strokeWidth="7"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M68 8C54 16 44 32 38 54" />
-            <path d="M38 54 18 40" />
-            <path d="M38 54 56 42" />
-          </g>
-        </svg>
-      </p>
       <div
         className="icon-row"
         data-fan={fan ? "true" : "false"}

@@ -101,6 +101,6 @@ alter publication supabase_realtime add table public.messages;
 insert into public.groups (name, description, plan_id)
 values
   ('The House', 'The open room for Tech Hause members.', 'member'),
-  ('After the Night', 'What stayed after Tech After Dark.', 'member'),
+  ('After the Night', 'What stayed after the night.', 'member'),
   ('Circle', 'A closer room. Circle plan.', 'circle')
 on conflict do nothing;

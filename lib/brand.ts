@@ -1,15 +1,15 @@
 export const brand = {
-  name: "TechFolx",
+  name: "Bmore Tech Nights",
   line: "Where interaction meets space.",
-  sell: "TechFolx transforms physical spaces into interactive, tech-driven experiences that teach, engage, and immerse people.",
+  sell: "Bmore Tech Nights transforms physical spaces into interactive, tech-driven experiences that teach, engage, and immerse people.",
   position:
-    "TechFolx creates tech-infused immersive experiences that blend interaction, spatial flow, and sensory design.",
+    "Bmore Tech Nights creates tech-infused immersive experiences that blend interaction, spatial flow, and sensory design.",
   lede: "We design how people move, discover, and engage with technology inside physical spaces.",
   words: ["interaction", "immersion", "flow", "discovery", "learning"] as const,
   site: "https://soulhause.com",
   luma: "https://luma.com/soulhause",
   email: "hello@soulhause.com",
-  logo: "/soulhause-logo.png",
+  logo: "/btn-logo.png",
 } as const;
 
 export const brandLineFull = "Where interaction meets space";

@@ -32,7 +32,7 @@ export const nightStory = {
     },
   ],
   contrast:
-    "A conference charges you to sit and watch panels. A lukewarm mixer costs you time and gas. TechFolx is the room — after work, at happy hour, open to anyone in tech.",
+    "A conference charges you to sit and watch panels. A lukewarm mixer costs you time and gas. Bmore Tech Nights is the room — after work, at happy hour, open to anyone in tech.",
   whoTitle: "Is this for you?",
   whoLead: "If any of these is you, come. If it isn’t, this isn’t your night.",
   who: [
@@ -50,9 +50,9 @@ export const nightStory = {
     },
   ],
   hostKicker: "From the host",
-  host: "A decade in tech — founder, engineer, community builder. Before that, theater and hospitality. A great experience is built — produced, felt, remembered. TechFolx is that: a tech-infused experience, not a badge and a business card.",
+  host: "A decade in tech — founder, engineer, community builder. Before that, theater and hospitality. A great experience is built — produced, felt, remembered. Bmore Tech Nights is that: a tech-infused experience, not a badge and a business card.",
   hostName: "Khalif",
-  hostRole: "Founder, TechFolx",
+  hostRole: "Founder, Bmore Tech Nights",
   dealLead: "You were going to get a drink after work anyway. This is the version where the room is worth it.",
   walkTitle: "What you walk into",
   walk: [
@@ -64,7 +64,7 @@ export const nightStory = {
   faqs: [
     {
       q: "What is this?",
-      a: "TechFolx is a tech-infused experience. Produced like theater and hospitality — not a conference, not a meetup with a program, not a pitch night. The room is designed. The night is the product.",
+      a: "Bmore Tech Nights is a tech-infused experience. Produced like theater and hospitality — not a conference, not a meetup with a program, not a pitch night. The room is designed. The night is the product.",
     },
     {
       q: "Who should come?",

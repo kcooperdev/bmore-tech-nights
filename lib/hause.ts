@@ -15,7 +15,7 @@ export const hauseNow = [
 
 export const hauseComing = [
   {
-    title: "The TechFolx card",
+    title: "The Bmore Tech Nights card",
     body: "Perks and rewards at restaurants and places, online and off.",
   },
   {

@@ -10,8 +10,6 @@ const PHRASES = [
   { key: "social-energy", words: ["people", "in", "tech", "together"] },
   { key: "social-energy", words: ["build", "it", "together"] },
   { key: "momentum", words: ["future", "of", "baltimore"] },
-  { key: "relationships", words: ["baltimore", "tech", "week"] },
-  { key: "connection", words: ["tech", "after", "dark"] },
   { key: "community", words: ["community"] },
   { key: "momentum", words: ["tech"] },
 ] as const;
@@ -61,7 +59,6 @@ function tokenize(line: string): Piece[] {
     pieces.push({
       text: core,
       punct,
-      say: stem(core) === "techfolx" ? folx.phonetic : undefined,
     });
     index += 1;
   }
@@ -94,7 +91,7 @@ export function TechAfterDarkPage() {
       <HouseNav>
         <RoomSound />
       </HouseNav>
-      <main className="folx-scroll" aria-label="TechFolx">
+      <main className="folx-scroll" aria-label={folx.name}>
         <section className="hero">
           <div className="copy-container hero-frame">
             <div className="hero-copy">
@@ -128,11 +125,7 @@ export function TechAfterDarkPage() {
                 {paragraphs.map((line) => (
                   <p
                     key={line}
-                    aria-label={
-                      line.includes("TechFolx")
-                        ? line.replace("TechFolx", "TechFolx, pronounced tech folks,")
-                        : line
-                    }
+                    aria-label={line}
                   >
                     <span aria-hidden="true">
                       {tokenize(line).map((word, wordIndex) => (

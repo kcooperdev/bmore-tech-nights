@@ -89,6 +89,31 @@ html:has(.folx-scroll) body {
   gap: 0.65rem;
 }
 
+.folx-scroll .hero-ways {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.15rem;
+  margin: 0.2rem 0 0;
+}
+
+.folx-scroll .hero-ways a {
+  color: color-mix(in oklab, #f3efe6 72%, transparent);
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.folx-scroll .hero-ways a:hover {
+  color: #f4be3c;
+}
+
+.folx-scroll .hero-ways a:focus-visible {
+  outline: 2px solid #f4be3c;
+  outline-offset: 3px;
+}
+
 .folx-scroll .hero-cta {
   display: inline-flex;
   align-items: center;
@@ -137,38 +162,9 @@ html:has(.folx-scroll) body {
   width: 100%;
 }
 
-.folx-scroll .icon-cue {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  margin: 0 0 0.35rem;
-  color: #f4be3c;
-  font-family: var(--font-display), sans-serif;
-  font-size: 0.84rem;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  transform: rotate(-2deg);
-  pointer-events: none;
-  transition: opacity 0.35s ease;
-}
-
-.folx-scroll .crayon-arrow {
-  display: block;
-  width: 3.1rem;
-  height: auto;
-  margin-top: 0.05rem;
-  overflow: visible;
-}
-
-.folx-scroll .icon-stage:has(.icon-row[data-fan="true"]) .icon-cue {
-  opacity: 0;
-}
-
 @media (max-width: 720px) {
-  .folx-scroll .icon-cue {
-    display: flex;
+  .folx-scroll .hero-foot {
+    display: none;
   }
 }
 

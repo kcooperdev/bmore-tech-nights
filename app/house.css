@@ -92,7 +92,7 @@ html[data-theme="dark"] body.is-landing-hero:has(.landing-hero--house) {
   left: 0;
   z-index: 30;
   display: grid;
-  grid-template-areas: "mark links sound";
+  grid-template-areas: "mark . sound";
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   column-gap: 1.5rem;
@@ -107,10 +107,6 @@ html[data-theme="dark"] body.is-landing-hero:has(.landing-hero--house) {
   grid-area: mark;
 }
 
-.house-nav-links {
-  grid-area: links;
-}
-
 .house-nav .gold-sound {
   position: static;
   grid-area: sound;
@@ -118,8 +114,7 @@ html[data-theme="dark"] body.is-landing-hero:has(.landing-hero--house) {
   pointer-events: auto;
 }
 
-.house-nav-mark,
-.house-nav-links a {
+.house-nav-mark {
   pointer-events: auto;
 }
 
@@ -131,35 +126,15 @@ html[data-theme="dark"] body.is-landing-hero:has(.landing-hero--house) {
   text-decoration: none;
 }
 
-.house-nav-mark:focus-visible,
-.house-nav-links a:focus-visible {
+.house-nav-logo {
+  display: block;
+  height: 1.85rem;
+  width: auto;
+}
+
+.house-nav-mark:focus-visible {
   outline: 2px solid #f4be3c;
   outline-offset: 4px;
-}
-
-.house-nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem 1.75rem;
-  pointer-events: none;
-}
-
-.house-nav-links a {
-  color: color-mix(in oklab, #f3efe6 70%, transparent);
-  font-family: var(--font-display), sans-serif;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  line-height: 1;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.house-nav-links a:hover,
-.house-nav-links a[aria-current="page"] {
-  color: #f4be3c;
 }
 
 html:has(.house-page),
@@ -261,20 +236,7 @@ html:has(.house-page) body {
 
 @media (max-width: 720px) {
   .house-nav {
-    grid-template-areas:
-      "mark . sound"
-      "links links links";
-    row-gap: 0.55rem;
-  }
-
-  .house-nav-links {
-    justify-content: center;
-    gap: 0.45rem 1.1rem;
-  }
-
-  .house-nav-links a {
-    font-size: 0.62rem;
-    letter-spacing: 0.08em;
+    grid-template-areas: "mark . sound";
   }
 }
 
@@ -538,4 +500,16 @@ html:has(.house-page) body {
 
 .gold-go:hover {
   background: #f4d878;
+}
+
+.gold-go--line {
+  background: transparent;
+  color: #f3efe6;
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, #f3efe6 35%, transparent);
+}
+
+.gold-go--line:hover {
+  background: transparent;
+  color: #f4be3c;
+  box-shadow: inset 0 0 0 1px #f4be3c;
 }

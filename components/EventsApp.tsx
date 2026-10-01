@@ -207,7 +207,7 @@ function House() {
       <aside
         id="house-menu"
         className="app-rail"
-        aria-label="TechFolx"
+        aria-label={brand.name}
         data-open={menu ? "true" : "false"}
         inert={!menu ? true : undefined}
       >

@@ -1,5 +1,6 @@
 "use client";
 
+import { brand } from "@/lib/brand";
 import { lookingChips } from "@/lib/intents";
 import type { EventItem } from "@/lib/events";
 import type { Member } from "@/lib/members";
@@ -39,7 +40,7 @@ export function DeskSide({
         ) : (
           <>
             <p className="dash-title">
-              {night?.title.split(":")[0] ?? "Tech After Dark"}
+              {night?.title.split(":")[0] ?? brand.name}
             </p>
             <p className="mt-2 text-sm leading-6 text-muted">
               {night ? "Save a spot on Luma." : "Next night soon"}

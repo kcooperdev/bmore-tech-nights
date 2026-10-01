@@ -8,7 +8,7 @@ export const sprintMedia = {
 
 export const sprintStory = {
   hero: {
-    kicker: "TechFolx presents",
+    kicker: "Bmore Tech Nights presents",
     title: ["The", "Sprint"] as const,
     entry: "$25 entry",
     lede: "Two weeks to build it. Four minutes to prove it.",
@@ -120,7 +120,7 @@ export const sprintStory = {
     title: theSprint.launch,
     lede: "The first clock starts in Baltimore in January 2027. The list gets the date, the venue, and the entry window first.",
     record:
-      "Every demo is recorded and every placement lands on your TechFolx profile. Run the same idea across enough sprints and that record becomes something a sponsor or an investor can act on.",
+      "Every demo is recorded and every placement lands on your Bmore Tech Nights profile. Run the same idea across enough sprints and that record becomes something a sponsor or an investor can act on.",
     cta: "Get on the list",
     note: "Free to join. One email when entries open.",
   },

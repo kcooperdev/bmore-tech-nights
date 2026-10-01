@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { SprintPage } from "@/components/SprintPage";
+import { brand } from "@/lib/brand";
 import { theSprint } from "@/lib/offerings";
 
 export const metadata: Metadata = {
-  title: `${theSprint.name} · TechFolx`,
+  title: `${theSprint.name} · ${brand.name}`,
   description: theSprint.what,
 };
 

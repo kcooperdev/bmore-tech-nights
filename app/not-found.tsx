@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MarketingShell } from "@/components/MarketingShell";
+import { brand } from "@/lib/brand";
 
 export default function NotFound() {
   return (
@@ -9,7 +10,7 @@ export default function NotFound() {
         <h1 className="landing-room-title">This room isn’t here.</h1>
         <p className="landing-room-copy">The page you want is gone, or it never was.</p>
         <Link className="landing-hero-next" href="/">
-          Back to TechFolx
+          Back to {brand.name}
         </Link>
       </section>
     </MarketingShell>

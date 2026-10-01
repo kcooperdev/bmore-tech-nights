@@ -1,3 +1,5 @@
+import { brand } from "@/lib/brand";
+
 const STAR_COUNT = 72;
 
 function star(i: number) {
@@ -85,7 +87,7 @@ export function NightAtmosphere() {
           </g>
         </svg>
       </div>
-      <span className="night-side night-side-left">TechFolx · The room</span>
+      <span className="night-side night-side-left">{brand.name} · The room</span>
       <span className="night-side night-side-right">The room · The point</span>
     </>
   );
