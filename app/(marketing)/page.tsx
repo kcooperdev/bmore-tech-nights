@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { TechAfterDarkPage } from "@/components/TechAfterDarkPage";
+import { HomePage } from "@/components/HomePage";
 import { brand } from "@/lib/brand";
 
 export const metadata: Metadata = {
@@ -14,5 +14,5 @@ export const viewport: Viewport = {
 };
 
 export default function Home() {
-  return <TechAfterDarkPage />;
+  return <HomePage />;
 }

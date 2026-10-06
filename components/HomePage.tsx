@@ -66,7 +66,7 @@ function tokenize(line: string): Piece[] {
   return pieces;
 }
 
-export function TechAfterDarkPage() {
+export function HomePage() {
   useEffect(() => {
     const boot = () => {
       const start = (

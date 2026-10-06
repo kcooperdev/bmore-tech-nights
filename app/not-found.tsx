@@ -1,18 +1,21 @@
 import Link from "next/link";
-import { MarketingShell } from "@/components/MarketingShell";
-import { brand } from "@/lib/brand";
+import "@/app/folx-scroll.css";
 
 export default function NotFound() {
   return (
-    <MarketingShell>
-      <section className="landing-room landing-room--page">
-        <p className="kicker">Lost</p>
-        <h1 className="landing-room-title">This room isn’t here.</h1>
-        <p className="landing-room-copy">The page you want is gone, or it never was.</p>
-        <Link className="landing-hero-next" href="/">
-          Back to {brand.name}
-        </Link>
+    <main className="folx-scroll">
+      <section className="hero">
+        <div className="copy-container hero-frame">
+          <div className="hero-copy">
+            <h1>This page isn’t here.</h1>
+            <div className="cta-stack">
+              <Link className="hero-cta" href="/">
+                Bmore Tech Nights
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
-    </MarketingShell>
+    </main>
   );
 }

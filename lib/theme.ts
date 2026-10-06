@@ -1,4 +1,4 @@
-export const THEME_KEY = "soulhause-theme-v1";
+export const THEME_KEY = "bmore-tech-nights-theme-v1";
 export type Theme = "light" | "dark";
 
 export const THEME_LIGHT = "#f3f1ec";
